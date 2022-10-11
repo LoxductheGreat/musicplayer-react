@@ -1,0 +1,85 @@
+
+
+  .App {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 100px; */
+  }
+
+  .player {
+    display: block;
+    background-color: #2F2C2C;
+    border-style: solid;
+    border-radius: 5%;
+    margin-top: 50px;
+    margin-left: 120px;
+    margin-right: 120px;
+    height: 550px;
+    width: 430px;
+  }
+
+  .player h4 {
+    margin-left: 165px;
+    color: white;
+    font-size: 20px;
+  }
+
+
+  img {
+    width: 200px;
+    height: 200px;
+    margin-left: 120px;
+    border-radius: 50%;
+  }
+
+  .song-name {
+    margin-left: 82px;
+    margin-bottom: 0;
+    color: white;
+    font-size: 30px;
+  }
+
+  .song-artist {
+    margin-left: 175px;
+    color: #C0C8CF;
+  }
+
+  .player-controls {
+    margin-left: 135px;
+    display: flex;
+    align-items: center;
+  }
+
+    .skip-back-bttn, .skip-foward-bttn {
+    border: none;
+    background: none;
+    color: #C0C8CF;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .skip-back-bttn:hover, .skip-foward-bttn:hover {
+    color: white;
+  }
+
+  .play-bttn {
+    border: none;
+    background: none;
+    color: white;
+    transition: transform .2s;
+  }
+
+  
+  .play-bttn:hover {
+    transform: scale(1.2);
+  }
+
+  .song-que {
+    color: white;
+    font-weight: bold;
+    margin-left: 105px;
+    margin-top: 30px;
+  }
