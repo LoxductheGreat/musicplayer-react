@@ -14,6 +14,10 @@ function PlayerControls (props) {
       <button className='skip-foward-bttn' onClick={() => props.SkipSong()}>
         <FontAwesomeIcon icon={faForwardStep} size='2xl' />
       </button>
+      {/* <div>
+        <input type='range' min='0' max='100' value={props.volume} onChange={(e, v) => props.setVolume(v)} />
+        <progress min='0' max='100' value={props.volume} />
+      </div> */}
     </div>
   )
 }

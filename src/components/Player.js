@@ -5,10 +5,12 @@ import PlayerControls from './PlayerControls'
 function Player (props) {
   const trackAudio = useRef(null)
   const [isPlaying, setisPlaying] = useState(false)
+  // const [volume, setVolume] = useState(50)
 
   useEffect(() => {
     if (isPlaying) {
       trackAudio.current.play()
+      // trackAudio.current.volume = volume / 100
     } else {
       trackAudio.current.pause()
     }
@@ -41,10 +43,10 @@ function Player (props) {
 
   return (
     <div className='player'>
-      <audio src={props.song[props.currentSongIdx].track} ref={trackAudio}></audio>
+      <audio src={props.song[props.currentSongIdx].track} ref={trackAudio} />
       <h4>Playing Now</h4>
       <PlayerDetails song={props.song[props.currentSongIdx]} />
-      <PlayerControls isPlaying={isPlaying} setisPlaying={setisPlaying} SkipSong={SkipSong} />
+      <PlayerControls isPlaying={isPlaying} setisPlaying={setisPlaying} SkipSong={SkipSong} /*volume={volume} setVolume={setVolume}*/ />
       <p className='song-que'>Next up: {props.song[props.nextSongIdx].name} by: {props.song[props.nextSongIdx].artist}</p>
     </div>
   )
